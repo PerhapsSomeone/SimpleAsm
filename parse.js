@@ -14,7 +14,11 @@ let validRegisters = [
 	"x1",
 	"x2",
 	"x3",
-	"x4"
+	"x4",
+	"x5",
+	"x6",
+	"x7",
+	"x8"
 ];
 
 function replaceAll(str, find, replace) {
@@ -76,7 +80,7 @@ function parse(stmt) {
 		if(getValueSize(input) < 256) {
 			x1 = input;
 		} else {
-			console.log("Too much data in 256 byte register");
+			console.log("Too much data in 256 byte register!");
 		}
 	}
 }
