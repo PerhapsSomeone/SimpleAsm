@@ -1,15 +1,22 @@
 <html>
 <head>
 <title>SimpleAsm</title>
+<style>
+.nextToOther {
+	display: inline-block;
+}
+</style>
 </head>
 <body>
 
+<div class="nextToOther">
 <textarea id="code"></textarea>
+</div>
+<div class="nextToOther">
 <br />
 <button onclick="execute()">Load code</button>
 <button onclick="next()">Next</button>
 <br />
-<div>
 <p>Instruction: <span id="instruction"></span></p>
 <p>acc: <span id="acc"></span></p>
 <p>dcc: <span id="dcc"></span></p>
@@ -17,6 +24,11 @@
 <p>x2: <span id="x2"></span></p>
 <p>x3: <span id="x3"></span></p>
 <p>x4: <span id="x4"></span></p>
+<p>x5: <span id="x5"></span></p>
+<p>x6: <span id="x6"></span></p>
+<p>x7: <span id="x7"></span></p>
+<p>x8: <span id="x8"></span></p>
+
 </div>
 
 <script src="parse.js"></script>
